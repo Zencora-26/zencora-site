@@ -93,25 +93,38 @@ HIPAA-aware workflows, experienced coders, and US healthcare-focused processes d
 
 <section id="contact">
 <h2>Contact Us</h2>
-
-<h2>Contact Us</h2>
-
-<p style="font-weight:bold;">
-Start with a free audit — no commitment required.
-</p>
-
-<p style="color:#555;">
-We typically respond within 24 hours.
+  
+<p style="font-size:14px; color:#555;">
+For service inquiries, audits, or job applications — fill the form below and we’ll get back within 24 hours.
 </p>
   
-<form action="https://formspree.io/f/xlgpqkyw" method="POST">
-<input type="text" name="name" placeholder="Your Name" required><br><br>
+<form action="https://formspree.io/f/xlgpqkyw" method="POST" style="max-width:500px; margin:auto; text-align:left;">
 
-<input type="email" name="email" placeholder="Your Email" required><br><br>
+<label>Your Name</label>
+<input type="text" name="name" required style="width:100%; padding:10px; margin-bottom:10px;">
 
-<textarea name="message" placeholder="Your Message" required></textarea><br><br>
+<label>Email Address</label>
+<input type="email" name="email" required style="width:100%; padding:10px; margin-bottom:10px;">
 
-<button type="submit" class="btn">Request Free Audit</button>
+<label>Phone Number (Optional)</label>
+<input type="tel" name="phone" style="width:100%; padding:10px; margin-bottom:10px;">
+
+<label>I am:</label>
+<select name="user_type" required style="width:100%; padding:10px; margin-bottom:10px;">
+<option value="">Select</option>
+<option value="clinic">Clinic / Healthcare Provider</option>
+<option value="billing_company">Billing Company</option>
+<option value="job_seeker">Job Seeker</option>
+<option value="other">Other</option>
+</select>
+
+<label>Message</label>
+<textarea name="message" rows="5" required style="width:100%; padding:10px; margin-bottom:15px;"></textarea>
+
+<button type="submit" class="btn" style="width:100%;">
+Submit Request
+</button>
+
 </form>
 
 </section>
