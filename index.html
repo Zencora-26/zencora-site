@@ -87,13 +87,21 @@ text-align:center;
 transform:translateY(-5px);
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
-.card img {
+/* ONLY pain point images */
+#pain-points .card img {
 width: 140px;
 height: 140px;
 object-fit: cover;
 display: block;
 margin: 0 auto 15px;
 border-radius: 10px;
+}
+
+/* ALL other icons (services, why, etc.) */
+.card img {
+width: 40px;
+height: 40px;
+object-fit: contain;
 }
 
 /* FORM */
@@ -172,7 +180,7 @@ Trusted workflows designed for accuracy, compliance, and faster reimbursements.
 </section>
 
 <!-- PAIN POINTS -->
-<section style="background:#ffffff;">
+<section id="pain-points" style="background:#ffffff;">
 <h2>Are You Facing These Challenges?</h2>
 
 <div class="cards">
