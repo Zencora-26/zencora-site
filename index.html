@@ -61,46 +61,101 @@ width:100%;
 }
 
 /* HERO */
-header {
-background: radial-gradient(circle at top right,#1b6ca8,#0d3b66);
-color:#fff;
-padding:100px 20px;
-text-align:center;
+.hero {
 position:relative;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+
+/* REAL BACKGROUND */
+background:
+linear-gradient(rgba(13,59,102,0.85), rgba(13,59,102,0.9)),
+url('https://images.unsplash.com/photo-1588776814546-ec7e3c5a8f02?q=80&w=1600') center/cover no-repeat;
+
 overflow:hidden;
 }
 
-/* background glow */
-header::before {
+/* animated soft glow */
+.hero::before {
 content:'';
 position:absolute;
 width:500px;
 height:500px;
-background:rgba(255,255,255,0.05);
+background:rgba(255,122,0,0.15);
 border-radius:50%;
 top:-150px;
 right:-150px;
+animation:float 6s infinite ease-in-out;
 }
 
-/* second glow */
-header::after {
+.hero::after {
 content:'';
 position:absolute;
 width:400px;
 height:400px;
-background:rgba(255,122,0,0.15);
+background:rgba(255,255,255,0.05);
 border-radius:50%;
 bottom:-150px;
 left:-150px;
+animation:float 8s infinite ease-in-out;
 }
 
-header h1 {
-font-size:44px;
-letter-spacing:0.5px;
+.hero-content {
+max-width:800px;
+z-index:2;
 }
 
-header p {
+.hero h1 {
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero .sub {
+font-size:18px;
 opacity:0.9;
+}
+
+.hero .desc {
+margin:15px 0 30px;
+font-size:16px;
+opacity:0.85;
+}
+
+.hero-buttons {
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn {
+background:#ff7a00;
+padding:14px 28px;
+border-radius:8px;
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover {
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn.outline {
+background:transparent;
+border:2px solid #fff;
+}
+
+/* animation */
+@keyframes float {
+0% {transform:translateY(0);}
+50% {transform:translateY(-20px);}
+100% {transform:translateY(0);}
 }
 
 /* BUTTON */
@@ -310,29 +365,11 @@ Zencora Health Solutions
 
 <!-- HERO -->
 <header>
-<section style="text-align:center;">
-<div style="display:flex; justify-content:center; margin-bottom:30px;">
+<header class="hero">
 
-<div style="
-position:relative;
-padding:10px;
-border-radius:16px;
-background:rgba(255,255,255,0.08);
-backdrop-filter: blur(10px);
-box-shadow:0 20px 60px rgba(0,0,0,0.3);
-animation:float 4s ease-in-out infinite;
-">
+<div class="hero-overlay"></div>
 
-<img src="RCM.jpg"
-style="width:100%; max-width:520px; border-radius:12px;">
-<div style="
-width:80%;
-height:1px;
-background:linear-gradient(to right,transparent,#ffffff40,transparent);
-margin:20px auto;
-"></div>
-</div>
-
+<div class="hero-content">
 </div>
 </section>
 <h1>Zencora Health Solutions</h1>
