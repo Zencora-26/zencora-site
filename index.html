@@ -211,6 +211,39 @@ border-radius:16px;
 margin:40px auto;
 }
 
+.step {
+text-align:center;
+width:130px;
+}
+
+.circle {
+width:70px;
+height:70px;
+border-radius:50%;
+background:#0d3b66;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+animation:float 3s ease-in-out infinite;
+}
+
+.circle img {
+width:28px;
+height:28px;
+}
+
+.circle.green {
+background:#28a745;
+}
+
+/* subtle floating animation */
+@keyframes float {
+0% {transform:translateY(0);}
+50% {transform:translateY(-8px);}
+100% {transform:translateY(0);}
+}
+
 /* FOOTER */
 footer {
 background:#0d3b66;
@@ -444,102 +477,104 @@ style="width:100%; max-width:500px; border-radius:12px;">
 </section>
 <div style="height:1px; background:linear-gradient(to right,transparent,#ddd,transparent); margin:40px 0;"></div>
 <!-- PROCESS -->
-<section style="background:#ffffff;">
-<h2>How It Works</h2>
-<div style="text-align:center; margin-bottom:30px;">
-<img src="0378dd7176b616a89494b7f9036ccfb57519f0ad-2546x2008.avif"
-style="width:100%; max-width:500px; border-radius:10px;">
-</div>
-  
-<!-- STEP 1 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#0d3b66; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/3063/3063820.png" width="30">
-</div>
+<section style="background:#ffffff; padding:80px 20px;">
+
+<h2 style="text-align:center;">How Our RCM Workflow Works</h2>
+
+<div style="max-width:1200px; margin:60px auto; position:relative;">
+
+<!-- FLOW LINE -->
+<div style="
+position:absolute;
+top:45px;
+left:5%;
+width:90%;
+height:3px;
+background:linear-gradient(to right,#0d3b66,#ff7a00);
+z-index:0;
+"></div>
+
+<div style="display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; position:relative; z-index:1;">
+
+<!-- STEP TEMPLATE -->
+<div class="step">
+<div class="circle"><img src="https://cdn-icons-png.flaticon.com/512/3063/3063820.png"></div>
 <h4>Secure Intake</h4>
-<p style="font-size:13px; color:#555;">
-HIPAA-compliant data transfer & access setup.
-</p>
+<p>HIPAA-compliant data transfer.</p>
 </div>
 
-<!-- STEP 2 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#ff7a00; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" width="30">
-</div>
-<h4>Eligibility Check</h4>
-<p style="font-size:13px; color:#555;">
-Insurance verification and coverage validation.
-</p>
+<div class="step">
+<div class="circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png"></div>
+<h4>Eligibility</h4>
+<p>Insurance verification.</p>
 </div>
 
-<!-- STEP 3 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#0d3b66; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" width="30">
-</div>
-<h4>Medical Coding</h4>
-<p style="font-size:13px; color:#555;">
-Accurate ICD-10, CPT, HCPCS code assignment.
-</p>
+<div class="step">
+<div class="circle"><img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png"></div>
+<h4>Coding</h4>
+<p>Accurate ICD/CPT coding.</p>
 </div>
 
-<!-- STEP 4 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#ff7a00; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" width="30">
-</div>
-<h4>QA Validation</h4>
-<p style="font-size:13px; color:#555;">
-Multi-layer QA ensures accuracy & compliance.
-</p>
+<div class="step">
+<div class="circle"><img src="https://cdn-icons-png.flaticon.com/512/845/845646.png"></div>
+<h4>QA</h4>
+<p>Multi-layer validation.</p>
 </div>
 
-<!-- STEP 5 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#0d3b66; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" width="30">
-</div>
-<h4>Claims Submission</h4>
-<p style="font-size:13px; color:#555;">
-Clean claim submission to payers.
-</p>
+<div class="step">
+<div class="circle"><img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png"></div>
+<h4>Billing</h4>
+<p>Clean claim submission.</p>
 </div>
 
-<!-- STEP 6 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#ff7a00; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="30">
-</div>
+<div class="step">
+<div class="circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png"></div>
 <h4>AR Follow-up</h4>
-<p style="font-size:13px; color:#555;">
-Denial management & payment tracking.
-</p>
+<p>Denial management.</p>
 </div>
 
-<!-- STEP 7 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#0d3b66; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" width="30">
-</div>
-<h4>Optimization</h4>
-<p style="font-size:13px; color:#555;">
-Identify patterns to reduce denials & improve TAT.
-</p>
+<div class="step">
+<div class="circle"><img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png"></div>
+<h4>Optimize</h4>
+<p>Continuous improvement.</p>
 </div>
 
-<!-- STEP 8 -->
-<div style="text-align:center; width:160px;">
-<div style="background:#28a745; width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:auto;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="30">
-</div>
-<h4>Reporting</h4>
-<p style="font-size:13px; color:#555;">
-Performance insights & revenue analytics.
-</p>
+<div class="step">
+<div class="circle green"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"></div>
+<h4>Results</h4>
+<p>Revenue growth.</p>
 </div>
 
 </div>
+</div>
+
+<!-- METRICS -->
+<div style="text-align:center; margin-top:60px;">
+<div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap;">
+
+<div>
+<h2 style="color:#0d3b66;">98%+</h2>
+<p>Accuracy</p>
+</div>
+
+<div>
+<h2 style="color:#0d3b66;">↓30%</h2>
+<p>Denial Reduction</p>
+</div>
+
+<div>
+<h2 style="color:#0d3b66;">Faster</h2>
+<p>Turnaround Time</p>
+</div>
+
+<div>
+<h2 style="color:#0d3b66;">↑ Revenue</h2>
+<p>Optimized Collections</p>
+</div>
+
+</div>
+</div>
+
 </section>
 <div style="height:1px; background:linear-gradient(to right,transparent,#ddd,transparent); margin:40px 0;"></div>
 <section style="background:#f8f9fa;">
