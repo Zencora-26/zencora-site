@@ -283,6 +283,37 @@ img:hover {
 transform:scale(1.04);
 }
 
+.founder-container {
+display: flex;
+align-items: center;
+gap: 50px;
+max-width: 1100px;
+margin: auto;
+flex-wrap: wrap;
+
+/* 🔥 THIS IS THE FIX */
+text-align: left;
+}
+
+.founder-text {
+flex: 1;
+max-width: 700px;
+text-align: left;   /* 🔥 ensures no inheritance from parent */
+}
+
+.founder-text p {
+text-align: left;
+line-height: 1.7;
+margin-bottom: 18px;
+font-size: 16px;
+}
+.founder-sign {
+text-align: left;   /* 🔥 important */
+margin-top: 20px;
+}
+.founder-container {
+align-items: flex-start;   /* instead of center */
+}
 /* FORM */
 input, textarea, select {
 border-radius:10px;
