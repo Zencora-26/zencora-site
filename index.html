@@ -62,100 +62,137 @@ width:100%;
 
 /* HERO */
 .hero {
-position:relative;
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:#fff;
+position: relative;
+min-height: 90vh;
+display: flex;
+align-items: center;
+color: #fff;
 
-/* REAL BACKGROUND */
+/* background */
 background:
-linear-gradient(rgba(13,59,102,0.85), rgba(13,59,102,0.9)),
+linear-gradient(rgba(13,59,102,0.9), rgba(13,59,102,0.95)),
 url('https://images.unsplash.com/photo-1588776814546-ec7e3c5a8f02?q=80&w=1600') center/cover no-repeat;
 
-overflow:hidden;
+overflow: hidden;
+padding: 60px 20px;
 }
 
-/* animated soft glow */
-.hero::before {
-content:'';
-position:absolute;
-width:500px;
-height:500px;
-background:rgba(255,122,0,0.15);
-border-radius:50%;
-top:-150px;
-right:-150px;
-animation:float 6s infinite ease-in-out;
+/* CONTAINER */
+.hero-container {
+max-width: 1200px;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 60px;
+flex-wrap: wrap;
+z-index: 2;
 }
 
-.hero::after {
-content:'';
-position:absolute;
-width:400px;
-height:400px;
-background:rgba(255,255,255,0.05);
-border-radius:50%;
-bottom:-150px;
-left:-150px;
-animation:float 8s infinite ease-in-out;
+/* LEFT */
+.hero-left {
+flex: 1;
 }
 
-.hero-content {
-max-width:800px;
-z-index:2;
+.hero-left h1 {
+font-size: 56px;
+line-height: 1.2;
+font-weight: 700;
 }
 
-.hero h1 {
-font-size:48px;
-margin-bottom:15px;
+/* RIGHT */
+.hero-right {
+flex: 1;
+max-width: 520px;
 }
 
-.hero .sub {
-font-size:18px;
-opacity:0.9;
+.sub {
+font-size: 16px;
+opacity: 0.9;
+margin-bottom: 10px;
 }
 
-.hero .desc {
-margin:15px 0 30px;
-font-size:16px;
-opacity:0.85;
+.desc {
+font-size: 15px;
+opacity: 0.85;
+margin-bottom: 20px;
 }
 
+/* BUTTONS */
 .hero-buttons {
-display:flex;
-gap:15px;
-justify-content:center;
-flex-wrap:wrap;
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+margin-bottom: 20px;
 }
 
 .btn {
-background:#ff7a00;
-padding:14px 28px;
-border-radius:8px;
-color:#fff;
-text-decoration:none;
-font-weight:600;
-transition:0.3s;
+padding: 14px 26px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
+display: inline-block;
+}
+
+.btn.primary {
+background: #ff7a00;
+color: #fff;
+}
+
+.btn.secondary {
+background: #2e6da4;
+color: #fff;
 }
 
 .btn:hover {
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transform: translateY(-3px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-.btn.outline {
-background:transparent;
-border:2px solid #fff;
+/* TRUST POINTS */
+.hero-points {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+font-weight: 600;
+margin-top: 10px;
 }
 
-/* animation */
-@keyframes float {
-0% {transform:translateY(0);}
-50% {transform:translateY(-20px);}
-100% {transform:translateY(0);}
+.hero-points span {
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+/* HIGHLIGHT */
+.highlight {
+margin-top: 12px;
+color: #ffd166;
+font-weight: 500;
+}
+
+/* BACKGROUND GLOW */
+.hero::before {
+content: '';
+position: absolute;
+width: 500px;
+height: 500px;
+background: rgba(255,122,0,0.15);
+border-radius: 50%;
+top: -150px;
+right: -150px;
+}
+
+.hero::after {
+content: '';
+position: absolute;
+width: 400px;
+height: 400px;
+background: rgba(255,255,255,0.05);
+border-radius: 50%;
+bottom: -150px;
+left: -150px;
 }
 
 /* BUTTON */
@@ -364,31 +401,45 @@ Zencora Health Solutions
 </nav>
 
 <!-- HERO -->
-<header>
 <header class="hero">
 
-<div class="hero-overlay"></div>
+<div class="hero-container">
 
-<div class="hero-content">
+<!-- LEFT -->
+<div class="hero-left">
+<h1>Zencora<br>Health Solutions</h1>
 </div>
-</section>
-<h1>Zencora Health Solutions</h1>
-<p>Medical Coding QA | RCM | Audit Solutions</p>
 
-<p>End-to-End Medical Coding & RCM That Maximizes Revenue and Ensures Compliance</p>
+<!-- RIGHT -->
+<div class="hero-right">
 
-<a href="#contact" class="btn">Get Free Coding Audit →</a>
-<a href="#contact" class="btn" style="background:#1b6ca8;">Book Consultation</a>
+<p class="sub">
+Medical Coding QA | RCM | Audit Solutions
+</p>
 
-<div style="margin-top:30px; display:flex; gap:30px; justify-content:center; flex-wrap:wrap; font-weight:600;">
+<p class="desc">
+End-to-End Medical Coding & RCM That Maximizes Revenue and Ensures Compliance
+</p>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn primary">Get Free Coding Audit →</a>
+<a href="#contact" class="btn secondary">Book Consultation</a>
+</div>
+
+<div class="hero-points">
 <span>✔ 98%+ Accuracy</span>
 <span>✔ HIPAA Compliant</span>
 <span>✔ US Healthcare Focus</span>
 </div>
-  
-<p style="margin-top:15px; color:#ffd166;">
+
+<p class="highlight">
 Reduce claim denials and improve revenue with structured coding workflows.
 </p>
+
+</div>
+
+</div>
+
 </header>
 
 <!-- CREDIBILITY -->
