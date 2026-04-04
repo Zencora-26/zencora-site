@@ -6,78 +6,65 @@
 
 <title>Zencora Health Solutions</title>
 
+<!-- SEO -->
 <meta name="description" content="Zencora Health Solutions provides medical coding, RCM, and audit services for US healthcare providers. Improve revenue, reduce denials, and ensure compliance.">
+<meta name="keywords" content="medical coding, RCM services, ICD-10, CPT coding, healthcare billing, medical audit">
 
+<!-- Favicon -->
 <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
 
 <style>
 
 /* GLOBAL */
 html {scroll-behavior:smooth;}
+body {font-family: Arial; margin:0; line-height:1.6;}
 
-body {
-font-family: 'Segoe UI', sans-serif;
-margin:0;
-background:#f5f7fb;
-color:#1a1a1a;
-}
-
-/* NAV */
+/* NAVBAR */
 nav {
 position:sticky;
 top:0;
 z-index:1000;
-background:rgba(13,59,102,0.9);
-backdrop-filter: blur(10px);
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 25px;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
+background:#0d3b66;
+padding:12px;
+text-align:center;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
-
 nav a {
 color:white;
-margin-left:20px;
+margin:0 15px;
 text-decoration:none;
-font-weight:600;
+font-weight:bold;
 }
 
 /* HEADER */
 header {
-background:linear-gradient(135deg,#0d3b66,#1b6ca8);
+background:#0d3b66;
 color:#fff;
-padding:80px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
-header h1 {font-size:42px;}
-header p {font-size:18px; opacity:0.9;}
-
 /* SECTION */
 section {
-padding:70px 20px;
-max-width:1100px;
+padding:60px 20px;
+max-width:1000px;
 margin:auto;
+border-bottom:1px solid #eee;
 }
 
 /* BUTTON */
 .btn {
-background:linear-gradient(135deg,#ff7a00,#ff9500);
+background:#ff7a00;
 color:#fff;
-padding:14px 26px;
+padding:12px 24px;
 text-decoration:none;
 margin:10px;
 display:inline-block;
-border-radius:8px;
-font-weight:600;
-transition:0.3s;
-box-shadow:0 5px 15px rgba(255,122,0,0.3);
+border-radius:6px;
+font-weight:bold;
 }
-
 .btn:hover {
-transform:translateY(-3px);
-box-shadow:0 12px 30px rgba(0,0,0,0.2);
+background:#e66a00;
 }
 
 /* CARDS */
@@ -85,74 +72,54 @@ box-shadow:0 12px 30px rgba(0,0,0,0.2);
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:25px;
+gap:20px;
 }
-
 .card {
-width:260px;
+border:1px solid #ddd;
 padding:25px;
-border-radius:14px;
-background:white;
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
+width:260px;
+border-radius:8px;
+background:#fff;
 transition:0.3s;
 text-align:center;
 }
-
 .card:hover {
-transform:translateY(-8px);
-box-shadow:0 20px 50px rgba(0,0,0,0.12);
+transform:translateY(-5px);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
-
-/* PAIN POINT IMAGES */
+/* ONLY pain point images */
 #pain-points .card img {
-width:140px;
-height:140px;
-object-fit:cover;
-border-radius:12px;
-margin-bottom:15px;
+width: 140px;
+height: 140px;
+object-fit: cover;
+display: block;
+margin: 0 auto 15px;
+border-radius: 10px;
 }
 
-/* ICONS */
+/* ALL other icons (services, why, etc.) */
 .card img {
-width:45px;
-height:45px;
-}
-
-/* IMAGE POLISH */
-img {
-border-radius:12px;
-transition:0.3s;
-}
-
-img:hover {
-transform:scale(1.02);
+width: 40px;
+height: 40px;
+object-fit: contain;
 }
 
 /* FORM */
 input, textarea, select {
 width:100%;
-padding:14px;
+padding:12px;
 margin-bottom:15px;
-border:1px solid #ddd;
-border-radius:8px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
 }
-
-input:focus, textarea:focus, select:focus {
-border-color:#0d3b66;
-outline:none;
-}
+label {font-weight:bold;}
 
 /* FOOTER */
 footer {
 background:#0d3b66;
-color:white;
-padding:30px 20px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-header h1 {font-size:30px;}
-.card {width:100%;}
+color:#fff;
+padding:25px 20px;
 }
 
 </style>
@@ -161,31 +128,33 @@ header h1 {font-size:30px;}
 <body>
 
 <!-- NAV -->
-<nav style="display:flex; justify-content:space-between; align-items:center;">
+<nav style="display:flex; justify-content:space-between; align-items:center; padding:10px 20px;">
+  
 <div style="display:flex; align-items:center;">
 <img src="logo9_27_222158.png" style="height:60px; background:white; padding:6px; border-radius:8px;">
 <span style="margin-left:10px; font-weight:bold; font-size:18px; color:white;">
 Zencora Health Solutions
 </span>
 </div>
-
+  
 <div>
 <a href="#">Home</a>
 <a href="#services">Services</a>
 <a href="#why">Why Us</a>
 <a href="#contact">Contact</a>
 </div>
+
 </nav>
 
 <!-- HERO -->
 <header>
-
-<section>
-<img src="RCM.jpg" style="width:100%; max-width:600px;">
+<section style="text-align:center;">
+<img src="RCM.jpg"
+style="width:100%; max-width:600px; border-radius:10px;">
 </section>
-
 <h1>Zencora Health Solutions</h1>
 <p>Medical Coding QA | RCM | Audit Solutions</p>
+
 <p>End-to-End Medical Coding & RCM That Maximizes Revenue and Ensures Compliance</p>
 
 <a href="#contact" class="btn">Get Free Coding Audit</a>
@@ -194,16 +163,410 @@ Zencora Health Solutions
 <p style="margin-top:15px; color:#ffd166;">
 Reduce claim denials and improve revenue with structured coding workflows.
 </p>
-
 </header>
 
-<!-- EVERYTHING ELSE SAME (UNCHANGED CONTENT, ONLY STYLE APPLIES) -->
+<!-- CREDIBILITY -->
+<section style="background:#f8f9fa; text-align:center;">
+<p style="font-weight:bold;">
+HIPAA-Compliant | Certified Medical Coders | US Healthcare Focus | Secure Data Handling
+</p>
+<p style="color:#333;">
+Trusted workflows designed for accuracy, compliance, and faster reimbursements.
+</p>
+</section>
 
-<!-- KEEP YOUR ENTIRE REMAINING HTML EXACTLY SAME HERE -->
-<!-- (PAIN POINTS, SERVICES, WHY, PROCESS, FOUNDER, PRICING, FAQ, FORM, FOOTER) -->
+<section style="text-align:center;">
+<p><strong>Supporting US Clinics, Hospitals & Billing Companies | Certified Coding Experts</strong></p>
+</section>
 
-<!-- IMPORTANT: KEEP YOUR EXISTING TIDIO SCRIPT -->
+<!-- PAIN POINTS -->
+<section id="pain-points" style="background:#ffffff;">
+<h2>Are You Facing These Challenges?</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="denial.jpg">
+<h3>High Claim Denials</h3>
+<p>Repeated coding errors leading to revenue loss and rework.</p>
+</div>
+
+<div class="card">
+<img src="coding quality.jpg">
+<h3>Inconsistent Coding Quality</h3>
+<p>Lack of QA processes causing accuracy issues and compliance risks.</p>
+</div>
+
+<div class="card">
+<img src="status delayd.webp">
+<h3>Backlogs & Delays</h3>
+<p>Pending charts impacting turnaround time and cash flow.</p>
+</div>
+
+<div class="card">
+<img src="revenue leak.jpg">
+<h3>Revenue Leakage</h3>
+<p>Missed codes and undercoding reducing reimbursement potential.</p>
+</div>
+
+</div>
+
+<p style="text-align:center; margin-top:20px;">
+<strong>Zencora fixes these with structured workflows and QA-driven systems.</strong>
+</p>
+
+</section>
+  
+<!-- SERVICES -->
+<section id="services" style="background:#ffffff;">
+<h2>Our Core Services</h2>
+<div style="text-align:center; margin-bottom:30px;">
+<img src="people-office-analyzing-checking-finance-graphs_23-2150377145.avif"
+style="width:100%; max-width:500px; border-radius:10px;">
+</div>
+<div class="cards">
+
+<div class="card">
+<h3>Medical Coding</h3>
+<img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" width="40" style="margin-bottom:10px;">
+<p>ICD-10, CPT, HCPCS coding with 98%+ accuracy and compliance.</p>
+</div>
+
+<div class="card">
+<h3>RCM Services</h3>
+<img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" width="40" style="margin-bottom:10px;">
+<p>End-to-end RCM including claims, AR follow-up, and denial management.</p>
+</div>
+
+<div class="card">
+<h3>Medical Auditing</h3>
+<img src="	https://cdn-icons-png.flaticon.com/512/1828/1828919.png" width="40" style="margin-bottom:10px;">
+<p>Compliance audits and revenue leakage identification.</p>
+</div>
+
+<p>All services are backed by QA-driven workflows and performance tracking.</p>
+</div>
+</section>
+
+<!-- WHY -->
+<section id="why" style="background:#f8f9fa;">
+<h2>Why Zencora</h2>
+<div style="text-align:center; margin-bottom:30px;">
+<img src="Mujiby.jpeg"
+style="width:100%; max-width:500px; border-radius:12px;">
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="40" style="margin-bottom:10px;">
+<h3>Process-Driven Workflows</h3>
+<p>Standardized systems ensuring accuracy and compliance.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="40" style="margin-bottom:10px;">
+<h3>Denial Reduction Focus</h3>
+<p>Identify patterns and reduce recurring claim denials.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/3063/3063820.png" width="40" style="margin-bottom:10px;">
+<h3>US Healthcare Expertise</h3>
+<p>Deep understanding of ICD-10, CPT, and payer rules.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" width="40" style="margin-bottom:10px;">
+<h3>Scalable Support</h3>
+<p>Flexible team for backlogs and ongoing operations.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<section style="background:#ffffff;">
+<h2>How It Works</h2>
+<div style="text-align:center; margin-bottom:30px;">
+<img src="0378dd7176b616a89494b7f9036ccfb57519f0ad-2546x2008.avif"
+style="width:100%; max-width:500px; border-radius:10px;">
+</div>
+  
+<div class="cards">
+
+<div class="card">
+ <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" width="40" style="margin-bottom:10px;">
+<h3>Audit</h3>
+<p>Identify gaps affecting revenue.</p>
+</div>
+
+<div class="card">
+  <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="40" style="margin-bottom:10px;">
+<h3>Setup</h3>
+<p>Implement structured workflows.</p>
+</div>
+
+<div class="card">
+  <img src="https://cdn-icons-png.flaticon.com/512/3063/3063820.png" width="40" style="margin-bottom:10px;">
+<h3>Execution</h3>
+<p>Accurate coding and reporting.</p>
+</div>
+
+<div class="card">
+  <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" width="40" style="margin-bottom:10px;">
+<h3>Optimize</h3>
+<p>Continuous improvement.</p>
+</div>
+
+</div>
+</section>
+
+<section style="background:#f8f9fa;">
+<h2>Message from the Founder</h2>
+
+<div style="display:flex; gap:40px; align-items:center; flex-wrap:wrap;">
+
+<!-- IMAGE -->
+<div style="flex:1; min-width:250px; text-align:center;">
+<img src="mUJI.png" style="width:100%; max-width:260px; border-radius:12px;">
+</div>
+
+<!-- CONTENT -->
+<div style="flex:2; min-width:250px;">
+
+<p>
+At Zencora Health Solutions, our mission is simple — bring accuracy, accountability, and efficiency into medical coding and revenue cycle operations.
+</p>
+
+<p>
+Having worked closely with healthcare workflows, I understand how coding errors, compliance gaps, and delayed reimbursements directly impact financial performance.
+</p>
+
+<p>
+Zencora is built to solve these challenges with structured processes and a strong focus on data security and compliance.
+</p>
+
+<p>
+We don’t just deliver coding — we build reliable systems that help healthcare providers improve revenue outcomes and operational stability.
+</p>
+
+<p style="margin-top:15px;">
+<strong>— Mujibur Rahuman P M</strong><br>
+
+<span style="font-size:14px; color:#555;">
+Healthcare Operations Specialist | Medical Coding & RCM Services
+</span><br>
+
+<span style="font-size:13px; color:#777;">
+Serving US Clinics, Hospitals & Billing Companies
+</span>
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+<section style="background:#f8f9fa;">
+<h2>Engagement Models</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Starter</h3>
+<p><strong>Audit & Initial Assessment</strong></p>
+<p>✔ Coding audit & error analysis</p>
+<p>✔ Identify denial patterns</p>
+<p>✔ Compliance gap review</p>
+<p>✔ Actionable improvement plan</p>
+<p style="margin-top:10px;"><strong>Best for clinics evaluating outsourcing</strong></p>
+</div>
+
+<div class="card">
+<h3>Growth</h3>
+<p><strong>Ongoing Coding Support</strong></p>
+<p>✔ ICD-10, CPT, HCPCS coding</p>
+<p>✔ QA & accuracy validation</p>
+<p>✔ Denial reduction tracking</p>
+<p>✔ Weekly performance reporting</p>
+<p style="margin-top:10px;"><strong>Flexible monthly engagement</strong></p>
+</div>
+
+<div class="card">
+<h3>Scale</h3>
+<p><strong>Full RCM Partnership</strong></p>
+<p>✔ End-to-end revenue cycle support</p>
+<p>✔ AR follow-up & denial management</p>
+<p>✔ Dedicated coding team</p>
+<p>✔ Workflow optimization & analytics</p>
+<p style="margin-top:10px;"><strong>Customized for large operations</strong></p>
+</div>
+
+</div>
+
+<p style="margin-top:20px; text-align:center;">
+Plans are tailored based on volume, specialty, and workflow.  
+<a href="#contact">Request a custom quote</a>
+</p>
+
+</section>
+
+<!-- WHO -->
+<section style="background:#ffffff;">
+<h2>Who We Serve</h2>
+
+<div class="cards">
+<div style="text-align:center; margin-top:30px;">
+<img src="RCM-Trends-in-Healthcare-post.jpeg"
+style="width:100%; max-width:500px; border-radius:10px;">
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png" width="40">
+<h3>Clinics & Private Practices</h3>
+<p>✔ Reduce claim rejections</p>
+<p>✔ Improve coding accuracy</p>
+<p>✔ Faster reimbursements</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png" width="40">
+<h3>Hospitals</h3>
+<p>✔ High-volume coding support</p>
+<p>✔ Multi-specialty expertise</p>
+<p>✔ Compliance-driven workflows</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="40">
+<h3>Billing Companies</h3>
+<p>✔ Offshore coding team</p>
+<p>✔ Cost-efficient scaling</p>
+<p>✔ Audit & QA support</p>
+</div>
+
+</div>
+</section>
+
+<section style="text-align:center;">
+<img src="image-7.webp"
+style="width:100%; max-width:500px; border-radius:10px;">
+</section>
+
+<!-- FAQ -->
+<section style="background:#f8f9fa;">
+<h2>Frequently Asked Questions</h2>
+
+<div style="max-width:800px; margin:auto;">
+
+<p><strong>How do you ensure data security?</strong></p>
+<p>We follow HIPAA-aligned workflows with secure access controls and encrypted data handling.</p>
+
+<p><strong>What accuracy can we expect?</strong></p>
+<p>Our structured QA processes target 98%+ coding accuracy with continuous monitoring.</p>
+
+<p><strong>Do you support all specialties?</strong></p>
+<p>Yes, we handle multi-specialty coding based on client requirements and guidelines.</p>
+
+<p><strong>How quickly can you start?</strong></p>
+<p>We can onboard within a few days after initial assessment and workflow setup.</p>
+
+<p><strong>Can you handle high volumes?</strong></p>
+<p>Yes, our scalable team model supports both backlog clearance and ongoing operations.</p>
+
+</div>
+</section>
+  
+<!-- CTA + FORM -->
+<section style="display:flex; gap:40px; flex-wrap:wrap; background:#f8f9fa;">
+
+<div style="flex:1;">
+<h2>Struggling with Denials or Backlogs?</h2>
+<p>Let’s fix your revenue cycle.</p>
+<a href="#contact" class="btn">Book Consultation</a>
+</div>
+
+<div style="flex:1;" id="contact">
+<h2>Contact Us</h2>
+
+<p style="color:#555;">
+For service inquiries or job applications — we respond within 24 hours.
+</p>
+
+<form action="https://formspree.io/f/xlgpqkyw" method="POST">
+
+<label>Your Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone</label>
+<input type="tel" name="phone">
+
+<label>I am:</label>
+<select name="user_type" required>
+<option value="">Select</option>
+<option>Clinic</option>
+<option>Billing Company</option>
+<option>Job Seeker</option>
+</select>
+
+<label>Message</label>
+<textarea name="message" rows="5" required></textarea>
+
+<button type="submit" class="btn" style="width:100%;">
+Submit Request
+</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="text-align:center; background:#0d3b66; color:white;">
+<h2>Ready to Improve Your Revenue Cycle?</h2>
+<p>Let’s identify gaps and optimize your workflow.</p>
+<a href="#contact" class="btn">Request Free Audit</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div style="display:flex; justify-content:space-between; flex-wrap:wrap; max-width:1000px; margin:auto;">
+
+<div>
+<p><strong>Zencora Health Solutions</strong></p>
+<p>Medical Coding | RCM | Audit</p>
+</div>
+
+<div>
+<p>Email: info@zencorahs.com</p>
+<p>Phone: +91 63747 33948</p>
+</div>
+
+<div>
+<p>Serving US Healthcare Providers</p>
+
+<div style="display:flex; gap:8px;">
+<a href="https://www.linkedin.com/company/zencora-health-solutions/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20">
+</a>
+<a href="https://www.linkedin.com/company/zencora-health-solutions/" target="_blank" style="color:white;">
+LinkedIn
+</a>
+</div>
+
+<p style="margin-top:8px;">© 2026 Zencora Health Solutions</p>
+</div>
+
+</div>
+</footer>
+
+<!-- WIDGETS -->
 <script src="//code.tidio.co/irx2imyjznbjkiwgwothz8ag4zadgxka.js" async></script>
-
+  
 </body>
 </html>
